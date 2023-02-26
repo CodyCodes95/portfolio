@@ -32,50 +32,50 @@
         <button>My Work</button>
       </div>
     </div>
-    <div class="bg-[#2B2928]" id="skills">
+    <div class="bg-[#2B2928] min-h-screen items-center justify-between flex flex-col" id="skills">
       <h2 class="text-white text-4xl">Technologies I Love Using</h2>
-      <div class="w-full flex flex-wrap">
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+      <div id="techs" class="w-full flex h-full items-center justify-center flex-wrap relative my-auto">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/ts.png" alt="TypeScript logo" class="w-56" />
-          <p class="text-white">TypeScript</p>
+          <p class="text-white text-xl">TypeScript</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/next.png" alt="Next.JS logo" class="w-56" />
-          <p class="text-white">Next.JS</p>
+          <p class="text-white text-xl">Next.JS</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/trpc.png" alt="TRPC logo" class="w-56" />
-          <p class="text-white">TRPC</p>
+          <p class="text-white text-xl">TRPC</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/prisma.png" alt="Prisma logo" class="w-56" />
-          <p class="text-white">Prisma</p>
+          <p class="text-white text-xl">Prisma</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/node.svg" alt="Node.JS logo" class="w-56" />
-          <p class="text-white">Node.JS</p>
+          <p class="text-white text-xl">Node.JS</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/tw.png" alt="Next.JS Logo" class="w-56" />
-          <p class="text-white">Tailwind</p>
+          <p class="text-white text-xl">Tailwind</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/astro.png" alt="Astro logo" class="w-56" />
-          <p class="text-white">Astro</p>
+          <p class="text-white text-xl">Astro</p>
         </div>
-        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col my-10">
           <img src="/assets/pscale.png" alt="PlanetScale logo" class="w-56 invert" />
-          <p class="text-white">PlanetScale</p>
+          <p class="text-white text-xl">PlanetScale</p>
         </div>
       </div>
+      <p class="mb-2 text-xl text-white">Using the above technologies I have built...</p>
     </div>
-    <div id="portfolio" class="bg-[#2B2928]">
-      <div class="w-full relative flex flex-col justify-center items-center">
-        <h2 class="text-4xl text-white">Portfolio</h2>
-        <p class="text-white">Using the above technologies I have built...</p>
-        <div class="flex md:flex-row flex-col w-full justify-center">
+    <div id="portfolio" class="bg-[#2B2928] flex flex-col min-h-screen items-center justify-start">
+      <h2 class="text-4xl text-white">Portfolio</h2>
+      <div class="w-full relative flex flex-col justify-center items-center my-auto">
+        <div class="flex md:flex-row flex-col w-full justify-center my-auto h-full relative">
           <div class="w-full p-3 m-3 bg-[#EEEEEC] rounded-lg md:w-[30%] flex flex-col">
-            <img src="/assets/parted-euro.png" alt="" />
+            <img class="max-w-screen" src="/assets/parted-euro.png" alt="Image of Parted Euro website" />
             <h3 class="w-full text-center text-2xl">Parted Euro</h3>
             <p>
               Hudson, the owner of Parted Euro had a Shopify store to sell parts from his business, wrecking BMW's. The
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div class="w-full p-3 m-3 bg-[#EEEEEC] md:w-[30%] rounded-lg flex flex-col">
-            <img src="/assets/postcode.png" alt="" />
+            <img class="max-w-screen" src="/assets/postcode.png" alt="" />
             <h3 class="w-full text-center text-2xl">Postcode Radius Search</h3>
             <p>
               As I was migrating from Javascript to Typescript I wanted to build a small project to apply those
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="w-full p-3 m-3 bg-[#EEEEEC] md:w-[30%] rounded-lg flex flex-col">
-            <img src="/assets/instag.png" alt="" />
+            <img class="max-w-screen" src="/assets/instag.png" alt="" />
             <h3 class="w-full text-center text-2xl">Instagators Podcast Website</h3>
             <p>
               A local Australian car podcast called The Instagators asked me to create a website for the podcast as they
@@ -178,30 +178,30 @@
           </div>
         </div>
       </div>
-      <div id="contact" class="bg-[#2B2928]">
-        <h2 class="text-white text-4xl w-full text-center">Contact</h2>
-        <p class="text-white w-full text-center">Feel free to contact me here or via email - codythatsme@gmail.com</p>
-        <div class="flex flex-col w-full items-center justify-center">
-          <input
-            placeholder="Name"
-            class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            type="text"
-          />
-          <input
-            placeholder="Email"
-            class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            type="text"
-          />
-          <input
-            placeholder="Message"
-            class="block p-4 text-gray-900 m-2 border border-gray-300 w-1/2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            type="text"
-          />
-          <button
-            class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 duration-200 m-4"
-            >Get in touch</button
-          >
-        </div>
+    </div>
+    <div id="contact" class="bg-[#2B2928]">
+      <h2 class="text-white text-4xl w-full text-center">Contact</h2>
+      <p class="text-white w-full text-center">Feel free to contact me here or via email - codythatsme@gmail.com</p>
+      <div class="flex flex-col w-full items-center justify-center">
+        <input
+          placeholder="Name"
+          class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          type="text"
+        />
+        <input
+          placeholder="Email"
+          class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          type="text"
+        />
+        <input
+          placeholder="Message"
+          class="block p-4 text-gray-900 m-2 border border-gray-300 w-1/2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          type="text"
+        />
+        <button
+          class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 duration-200 m-4"
+          >Get in touch</button
+        >
       </div>
     </div>
   </body>
