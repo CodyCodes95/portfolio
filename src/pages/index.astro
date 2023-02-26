@@ -8,20 +8,23 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Cody Partington</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="font-lato">
     <nav class="w-full bg-white flex justify-between">
       <div></div>
       <div class="flex">
-        <div>Skills</div>
-        <div>Portfolio</div>
-        <div>Contact</div>
+        <p class="scroll-to">Skills</p>
+        <p class="scroll-to">Portfolio</p>
+        <p class="scroll-to">Contact</p>
       </div>
     </nav>
     <div class="bg-[#E9E8EA] items-center justify-center min-h-screen flex" id="landing">
       <div class="w-[50%]"></div>
       <div class="w-[50%] pr-40 relative">
-        <h1 class="mb-4 text-5xl">Cody Partington</h1>
+        <h1 class="mb-4 text-7xl">Cody Partington</h1>
         <p class="text-gray-400">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad obcaecati ut, saepe, inventore natus nobis
           repellendus perferendis voluptatem impedit aspernatur, unde dolore optio voluptate eos.
@@ -30,32 +33,186 @@
       </div>
     </div>
     <div class="bg-[#2B2928]" id="skills">
-      <h2>Technologies Im Passionate About</h2>
+      <h2 class="text-white text-4xl">Technologies I Love Using</h2>
       <div class="w-full flex flex-wrap">
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
-        <div class="w-[25%]"></div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/ts.png" alt="TypeScript logo" class="w-56" />
+          <p class="text-white">TypeScript</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/next.png" alt="Next.JS logo" class="w-56" />
+          <p class="text-white">Next.JS</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/trpc.png" alt="TRPC logo" class="w-56" />
+          <p class="text-white">TRPC</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/prisma.png" alt="Prisma logo" class="w-56" />
+          <p class="text-white">Prisma</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/node.svg" alt="Node.JS logo" class="w-56" />
+          <p class="text-white">Node.JS</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/tw.png" alt="Next.JS Logo" class="w-56" />
+          <p class="text-white">Tailwind</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/astro.png" alt="Astro logo" class="w-56" />
+          <p class="text-white">Astro</p>
+        </div>
+        <div class="w-[50%] md:w-[25%] items-center justify-center flex flex-col">
+          <img src="/assets/pscale.png" alt="PlanetScale logo" class="w-56 invert" />
+          <p class="text-white">PlanetScale</p>
+        </div>
       </div>
     </div>
-    <div id="portfolio" class="bg-[#E9E8EA]">
-      <h2>Portfolio</h2>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div id="contact" class="bg-[#2B2928]">
-      <h2>Contact</h2>
-      <p>Feel free to contact me here or via email - codythatsme@gmail.com</p>
-      <div class="flex flex-col">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+    <div id="portfolio" class="bg-[#2B2928]">
+      <div class="w-full relative flex flex-col justify-center items-center">
+        <h2 class="text-4xl text-white">Portfolio</h2>
+        <p class="text-white">Using the above technologies I have built...</p>
+        <div class="flex md:flex-row flex-col w-full justify-center">
+          <div class="w-full p-3 m-3 bg-[#EEEEEC] rounded-lg md:w-[30%] flex flex-col">
+            <img src="/assets/parted-euro.png" alt="" />
+            <h3 class="w-full text-center text-2xl">Parted Euro</h3>
+            <p>
+              Hudson, the owner of Parted Euro had a Shopify store to sell parts from his business, wrecking BMW's. The
+              Shopify store did not allow for the all the functionality and automations he wanted. Hudson was tracking
+              sales in Excel, listings on Shopify, manually listing the same items on eBay, and manually entering
+              invoices in Xero.
+            </p>
+            <p>
+              I developed an application for Hudson which brought all those third party services under the one roof.
+            </p>
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>
+                Owner can create listings from a database of BMW parts, which already have relations such as compatible
+                models etc.
+              </li>
+              <li>Listings created on Parted Euro are automatically listed on his eBay using the eBay API</li>
+              <li>Stripe checkout for customers buying parts</li>
+              <li>Items purchased through Stripe generate a paid Xero invoice automatically using the Xero API</li>
+              <li>
+                All shipping quotes are generated using Australia Post's API based on the the size and weight data for
+                each part purchased which is stored in the database.
+              </li>
+              <li>
+                Owner has a dashboard to calculate profit per wreck depending on the sold parts associated to each
+                wreck, all automated.
+              </li>
+              <li>Built with NextJS and utilises Vercel serverless functions</li>
+              <li>TRPC and Prisma for end to end type safety</li>
+            </ul>
+            <div class="flex w-full justify-center items-center">
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://www.partedeuro.com.au">Website</a
+              >
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://github.com/CodyCodes95/parted-euro">Code</a
+              >
+            </div>
+          </div>
+          <div class="w-full p-3 m-3 bg-[#EEEEEC] md:w-[30%] rounded-lg flex flex-col">
+            <img src="/assets/postcode.png" alt="" />
+            <h3 class="w-full text-center text-2xl">Postcode Radius Search</h3>
+            <p>
+              As I was migrating from Javascript to Typescript I wanted to build a small project to apply those
+              learnings.
+            </p>
+            <p>
+              This application simply takes a location as a center point and a desired radius, and returns all the
+              postcodes within the radius.
+            </p>
+            <p>I also made the API free and publicly available</p>
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>Uses Google Places to offer suggestions on a starting position</li>
+              <li>NodeJS/Fastify API deployed on Railway handles the search and returns results</li>
+              <li>Query builder on the website allows users to easily create their own queries</li>
+            </ul>
+            <div class="flex w-full justify-center items-center">
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://postcode-radius-search.vercel.app">Website</a
+              >
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://github.com/CodyCodes95/postcode-radius-search">Code</a
+              >
+            </div>
+          </div>
+          <div class="w-full p-3 m-3 bg-[#EEEEEC] md:w-[30%] rounded-lg flex flex-col">
+            <img src="/assets/instag.png" alt="" />
+            <h3 class="w-full text-center text-2xl">Instagators Podcast Website</h3>
+            <p>
+              A local Australian car podcast called The Instagators asked me to create a website for the podcast as they
+              needed a platform to sell their stickers. They wanted a simple single-page website where they could list
+              different merchandise to sell. I decided to build the website in NextJS to try out a new framework. The
+              website went live and was able to accommodate the sale of the merchandise to real-world customers.
+            </p>
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>Serverless functionality using NextJS</li>
+              <li>Stripe checkout for orders</li>
+              <li>Admin dashboard for marking items as sold out/in stock</li>
+              <li>Although just stickers for now, very easy to expand and list future merchandise for sale</li>
+            </ul>
+            <div class="flex w-full justify-center items-center">
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://www.partedeuro.com.au">Website</a
+              >
+              <a
+                class="text-gray-900 hover:text-white border duration-150 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                target="_blank"
+                href="https://github.com/CodyCodes95/parted-euro">Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="bg-[#2B2928]">
+        <h2 class="text-white text-4xl w-full text-center">Contact</h2>
+        <p class="text-white w-full text-center">Feel free to contact me here or via email - codythatsme@gmail.com</p>
+        <div class="flex flex-col w-full items-center justify-center">
+          <input
+            placeholder="Name"
+            class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            type="text"
+          />
+          <input
+            placeholder="Email"
+            class="bg-gray-50 border border-gray-300 w-1/2 text-gray-900 m-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            type="text"
+          />
+          <input
+            placeholder="Message"
+            class="block p-4 text-gray-900 m-2 border border-gray-300 w-1/2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            type="text"
+          />
+          <button
+            class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 duration-200 m-4"
+            >Get in touch</button
+          >
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    document.querySelectorAll(".scroll-to").forEach((el: any) => {
+      el.addEventListener("click", (e: HTMLParagraphElement) => {
+        const target = document.querySelector(`#${el.innerText.toLowerCase()}`);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script>
 </html>
